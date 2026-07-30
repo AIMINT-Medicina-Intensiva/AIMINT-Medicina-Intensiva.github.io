@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIMINT</title>
+
+  <!-- Hidden note:
+       We load one serif font for the main brand title and one sans-serif for the interface.
+       This is a close visual approximation of the screenshot, not a verified font match. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hidden note:
+       External CSS stays in its own file so you can scale the project cleanly. -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hidden note:
+       Skip link improves keyboard accessibility even in simple static sites. -->
+  <a class="skip-link" href="#main-content">Saltar para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <p class="eyebrow">ASSOCIAÇÃO DE INTERNOS DE MEDICINA INTENSIVA</p>
+      <h1 class="site-title">AIMINT</h1>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main">
+    <section class="container cards-grid" aria-label="Navegação principal">
+      <!-- Hidden note:
+           Each column is a semantic content block.
+           The grid will collapse responsively on smaller screens. -->
+
+      <article class="nav-column">
+        <p class="column-label">A AIMINT</p>
+
+        <a href="#" class="nav-card">
+          <div class="nav-card-text">
+            <h2>Quem somos</h2>
+            <p>Missão e história da associação</p>
+          </div>
+          <span class="nav-card-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <a href="#" class="nav-card">
+          <div class="nav-card-text">
+            <h2>Estatutos</h2>
+            <p>Documentos fundadores</p>
+          </div>
+          <span class="nav-card-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <a href="#" class="nav-card">
+          <div class="nav-card-text">
+            <h2>Órgãos sociais</h2>
+            <p>Direção, assembleia e conselho fiscal</p>
+          </div>
+          <span class="nav-card-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <a href="#" class="nav-card">
+          <div class="nav-card-text">
+            <h2>Galeria</h2>
+            <p>Fotos e registos de eventos</p>
+          </div>
+          <span class="nav-card-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <a href="#" class="nav-card">
+          <div class="nav-card-text">
+            <h2>Contactos</h2>
+            <p>Fale connosco</p>
+          </div>
+          <span class="nav-card-icon" aria-hidden="true">↗</span>
+        </a>
+      </article>
+
+      <article class="nav-column">
+        <p class="column-label">O INTERNATO</p>
+
+        <a href="#" class="nav-card">
+          <div class="nav-card-text">
+            <h2>Internato</h2>
+            <p>Informação sobre o internato de MI</p>
+          </div>
+          <span class="nav-card-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <a href="#" class="nav-card">
+          <div class="nav-card-text">
+            <h2>Documentos</h2>
+            <p>Recursos e documentação</p>
+          </div>
+          <span class="nav-card-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <a href="#" class="nav-card">
+          <div class="nav-card-text">
+            <h2>Newsletter</h2>
+            <p>Edições da newsletter AIMINT</p>
+          </div>
+          <span class="nav-card-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <a href="#" class="nav-card">
+          <div class="nav-card-text">
+            <h2>RNMI</h2>
+            <p>Registo Nacional de Medicina Intensiva</p>
+          </div>
+          <span class="nav-card-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <a href="#" class="nav-card">
+          <div class="nav-card-text">
+            <h2>Estágios opcionais</h2>
+            <p>Partilhe a sua experiência</p>
+          </div>
+          <span class="nav-card-icon" aria-hidden="true">↗</span>
+        </a>
+      </article>
+
+      <article class="nav-column">
+        <p class="column-label">O CNIMINT</p>
+
+        <a href="#" class="nav-card">
+          <div class="nav-card-text">
+            <h2>CNIMINT</h2>
+            <p>Congresso Nacional de Internos de MI</p>
+          </div>
+          <span class="nav-card-icon" aria-hidden="true">↗</span>
+        </a>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
