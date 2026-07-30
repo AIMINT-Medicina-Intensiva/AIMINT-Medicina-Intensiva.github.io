@@ -1,0 +1,228 @@
+/* Hidden note:
+   Art direction: minimal, editorial, warm neutral, high whitespace.
+   Goal: resemble the screenshot's structure without overdesigning it. */
+
+:root {
+  /* Hidden note:
+     These colors are approximate from the screenshot, not exact extracted tokens. */
+  --bg: #f5f0e8;
+  --surface: #f5f0e8;
+  --text: #2f2723;
+  --muted: #8c7a6f;
+  --line: #d8cfc5;
+  --hover: #efe7de;
+
+  /* Hidden note:
+     Font variables make future swaps easy. */
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", Arial, sans-serif;
+
+  /* Hidden note:
+     A small spacing scale is enough for this page. */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  --radius: 0.5rem;
+  --max-width: 1240px;
+}
+
+/* Hidden note:
+   Basic reset to make spacing and sizing consistent. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--text);
+  background-color: var(--bg);
+  line-height: 1.5;
+}
+
+/* Hidden note:
+   Improves keyboard accessibility. Hidden until focused. */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: var(--space-4);
+  background: var(--text);
+  color: var(--bg);
+  padding: var(--space-2) var(--space-3);
+  text-decoration: none;
+  border-radius: var(--radius);
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: var(--space-4);
+}
+
+.container {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin-inline: auto;
+}
+
+/* Hidden note:
+   The top area is intentionally airy to reproduce the minimalist composition. */
+.site-header {
+  padding-top: clamp(3rem, 8vw, 5rem);
+  padding-bottom: clamp(2rem, 5vw, 3rem);
+  text-align: center;
+}
+
+.header-inner {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.site-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  line-height: 0.95;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* Hidden note:
+   Main content gets generous bottom spacing and uses a 3-column responsive grid. */
+.site-main {
+  padding-bottom: clamp(3rem, 8vw, 6rem);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+/* Hidden note:
+   At tablet sizes we switch to multiple columns. */
+@media (min-width: 768px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-10);
+  }
+}
+
+/* Hidden note:
+   At desktop we restore the three-column layout seen in the screenshot. */
+@media (min-width: 1100px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-12);
+  }
+}
+
+.nav-column {
+  display: grid;
+  gap: 0;
+}
+
+.column-label {
+  margin: 0 0 var(--space-8) 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* Hidden note:
+   Each item is a full-width link styled like a content row.
+   We use border-bottom instead of full cards because the screenshot is very restrained. */
+.nav-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-5) 0 var(--space-5) 0;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid var(--line);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-card:hover,
+.nav-card:focus-visible {
+  background-color: var(--hover);
+  outline: none;
+}
+
+.nav-card-text {
+  display: grid;
+  gap: var(--space-1);
+  min-width: 0;
+}
+
+.nav-card-text h2 {
+  margin: 0;
+  font-size: clamp(1.2rem, 1.3vw, 1.75rem);
+  line-height: 1.15;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.nav-card-text p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--muted);
+  max-width: 22ch;
+}
+
+.nav-card-icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.15rem;
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+/* Hidden note:
+   On small screens, slightly tighten spacing so the layout feels lighter and scrolls better. */
+@media (max-width: 480px) {
+  .site-header {
+    padding-top: 2.5rem;
+  }
+
+  .column-label {
+    margin-bottom: var(--space-6);
+  }
+
+  .nav-card {
+    padding: var(--space-4) 0;
+  }
+
+  .nav-card-text p {
+    max-width: 100%;
+  }
+}
