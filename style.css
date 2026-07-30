@@ -74,10 +74,15 @@ a {
   color: inherit;
   text-decoration: none;
 
-  font-size: 0.95rem;
   font-weight: 400;
 
   transition: opacity 0.2s ease;
+}
+
+nav a,
+.socials a {
+  font-size: 0.95rem;
+  font-weight: 400;
 }
 
 a:hover {
@@ -176,4 +181,13 @@ footer p {
 .page-content p {
   line-height: 1.8;
   margin-bottom: 1.5rem;
+}
+.page-content ul {
+  margin-top: 1rem;
+  padding-left: 1.25rem; /* controls bullet indentation */
+}
+
+.page-content li {
+  margin-bottom: 0.35rem; /* spacing between items */
+  line-height: 1.4;
 }
