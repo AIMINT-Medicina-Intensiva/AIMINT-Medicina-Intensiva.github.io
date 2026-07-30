@@ -20,12 +20,12 @@ body {
   display: flex;
   flex-direction: column;
 
-  padding: 4rem 2rem;
+  padding: 8rem 2rem 4rem;
 }
 
 header {
   text-align: center;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
 }
 
 h1 {
@@ -124,4 +124,29 @@ footer p {
     flex-direction: column;
     gap: 1rem;
   }
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 3rem;
+
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.page-content {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+
+  display: block;
+}
+
+.page-content section {
+  text-align: left;
+}
+
+.page-content p {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
 }
