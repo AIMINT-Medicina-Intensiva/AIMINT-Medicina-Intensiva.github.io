@@ -126,26 +126,53 @@ footer p {
   }
 }
 
+.page-header {
+  width: 100%;
+  max-width: 700px;
+
+  margin: 0 auto 4rem;
+
+  text-align: left;
+}
+
 .back-link {
   display: inline-block;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 
   font-size: 0.9rem;
   opacity: 0.6;
 }
 
-.content {
+.page-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  margin-top: 0.5rem;
+
+  margin-left: 0;
+  margin-right: 0;
+
+  max-width: none;
+
+  text-align: left;
+}
+
+.page-content {
   width: 100%;
-  max-width: 650px;
+  max-width: 700px;
 
   margin: 0 auto;
 
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  text-align: left;
 }
 
-.content p {
-  font-size: 1rem;
-  line-height: 1.9;
+.page-content p {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
 }
