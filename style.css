@@ -169,6 +169,7 @@ footer p {
 
   margin: 0 auto;
 
+  display: block;   /* important */
   text-align: left;
 }
 
