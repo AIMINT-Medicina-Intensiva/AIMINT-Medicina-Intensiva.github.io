@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://aimint.pt/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://aimint.pt/pages/associacao/about_us.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://aimint.pt/pages/associacao/estatutos.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimint.pt/pages/associacao/representation.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimint.pt/pages/associacao/team.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimint.pt/pages/internato/documents.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://aimint.pt/pages/internato/education.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://aimint.pt/pages/internato/rotations.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimint.pt/pages/cnimint/next_cnimint.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://aimint.pt/pages/cnimint/past_cnimints.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
